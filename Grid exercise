@@ -1,0 +1,53 @@
+
+package javaapplication12;
+
+import java.util.Scanner;
+
+public class JavaApplication12 {
+
+    public static void main(String[] args) {
+
+Scanner Gridcoord = new Scanner(System.in);         
+        
+//entering the size of the grid,
+//this is my part to make the program more interesting       
+                
+System.out.println("What would you like the dimensions of the grid to be?");
+System.out.println("Height: 1-");
+int H = Gridcoord.nextInt();
+
+System.out.println("Width: 1-");
+int W = Gridcoord.nextInt();
+        
+        
+//Enter co-ords portion        
+       
+        
+System.out.println("Please enter a Y co-ordinate");
+int Y = Gridcoord.nextInt();
+
+
+System.out.println("Please enter a X co-ordinate");      
+int X = Gridcoord.nextInt();
+
+
+//some if else to ensure its between 1 and 10
+if ( Y < 1|| Y > H) {
+    System.out.println("Invalid Y input received");
+}else {
+    System.out.println("Valid Y input entered");
+}
+                
+if ( X < 1|| X > W) {
+    System.out.println("Invalid X input received");
+}else {
+    System.out.println("Valid X input entered");
+}        
+        
+System.out.println(Y+","+X+" Valid co-ordinates recieved");
+        
+  
+    }
+    
+}
+    
